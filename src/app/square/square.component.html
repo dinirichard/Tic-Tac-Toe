@@ -1,1 +1,3 @@
-<button>{{ value }}</button>
+<button nbButton *ngIf="!value" status="warning">{{ value }}</button>
+<button nbButton hero size="giant" status="success" *ngIf="value == 'X'">{{ value }}</button>
+<button nbButton hero size="giant" status="info" *ngIf="value == 'O'">{{ value }}</button>
